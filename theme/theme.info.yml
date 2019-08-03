@@ -24,4 +24,4 @@ regions:
   page_bottom: 'Page bottom'
 
 libraries:
-  - 'bootstrap/theme'
+  - 'theme/theme'
