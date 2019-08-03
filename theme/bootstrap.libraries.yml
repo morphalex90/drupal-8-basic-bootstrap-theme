@@ -1,29 +1,12 @@
 theme:
+  css:
+    theme:
+      style.css: {}
+      css/layout.css: {}
   js:
-    js/theme.js: {}
-  dependencies:
-    - bootstrap/drupal.bootstrap
-    - bootstrap/attributes
-
-theme-settings:
-  js:
-    js/theme-settings.js: {}
+    js/script.js: {}
   dependencies:
     - core/jquery
     - core/jquery.once
     - core/drupal
     - core/drupalSettings
-
-
-modal.jquery.ui.bridge:
-  js:
-    js/modal.jquery.ui.bridge.js: {}
-  dependencies:
-    - bootstrap/modal
-    - core/jquery.ui
-    - core/jquery.ui.widget
-    - core/jquery.ui.draggable
-    - core/jquery.ui.mouse
-    - core/jquery.ui.position
-    - core/jquery.ui.resizable
-
