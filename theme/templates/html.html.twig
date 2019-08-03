@@ -62,6 +62,7 @@
     
   </head>
   <body{{ attributes.addClass(body_classes) }}>
+    <div class="render-blocking-loader" style="position:fixed; height:100%; width:100%; z-index:9999999999; top:0; left:0; background:#FFF;"></div>
     <a href="#main-content" class="visually-hidden focusable skip-link">{{ 'Skip to main content'|t }}</a>
     {{ page_top }}
     {{ page }}

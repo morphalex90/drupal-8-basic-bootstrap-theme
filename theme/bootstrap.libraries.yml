@@ -5,6 +5,7 @@ theme:
       css/layout.css: {}
   js:
     js/script.js: {}
+    js/render-blocking.js {}
   dependencies:
     - core/jquery
     - core/jquery.once
