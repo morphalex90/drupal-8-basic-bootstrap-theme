@@ -1,9 +1,9 @@
 type: theme
 base theme: false
 
-name: 'Theme'
+name: 'THEME'
 description: 'Basic theme, Bootstrap based'
-package: 'Theme'
+package: 'THEME'
 
 version: '8.x-1.0'
 core: '8.x'
@@ -23,4 +23,4 @@ regions:
   page_bottom: 'Page bottom'
 
 libraries:
-  - 'theme/theme'
+  - 'THEME/theme'
