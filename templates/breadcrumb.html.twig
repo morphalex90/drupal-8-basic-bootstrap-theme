@@ -1,24 +1,18 @@
-{#
-/**
- * @file
- * Default theme implementation for a breadcrumb trail.
- *
- * Available variables:
- * - breadcrumb: Breadcrumb trail items.
- *
- * @ingroup templates
- */
-#}
 {% if breadcrumb %}
-  <ol class="breadcrumb">
+  <nav class="breadcrumb" role="navigation" aria-labelledby="system-breadcrumb">
+    <ol itemscope itemtype="http://schema.org/BreadcrumbList">
     {% for item in breadcrumb %}
-      <li {{ item.attributes }}>
+      <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
         {% if item.url %}
-          <a href="{{ item.url }}">{{ item.text }}</a>
+            <a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="{{ item.url }}">
+            <span itemprop="name">{{ item.text }}</span>
+          </a>
         {% else %}
-          {{ item.text }}
+          <span itemprop="name">{{ item.text }}</span>
         {% endif %}
+        <meta itemprop="position" content="{{ loop.index }}" />
       </li>
     {% endfor %}
-  </ol>
+    </ol>
+  </nav>
 {% endif %}
